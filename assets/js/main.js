@@ -601,12 +601,12 @@ function showTime(){
   /* Check if its week or weekend */
   if (d != 0 && d != 6) {
     /* Change status depending on the time */
-    if ((h == 0 || h == 24) || h < 07) {
+    if ((h == 0 || h == 24) || h < 7) {
       statusColor = "#0373fc";
       statusText = "I am currently sleeping";
     }
 
-    else if (h >= 07 && h < 14) {
+    else if (h >= 7 && h < 14) {
       statusColor = "#FFA500";
       statusText = "I am currently working";
     }
@@ -622,7 +622,7 @@ function showTime(){
     }
   } else {
       /* Change status depending on the time */
-      if ((h == 0 || h == 24) || h < 08) {
+      if ((h == 0 || h == 24) || h < 8) {
         statusColor = "#0373fc";
         statusText = "I am currently sleeping";
       }
@@ -673,7 +673,7 @@ copyright();
 /* ==================== DYNAMIC YEARS OLD ==================== */
 function calcularEdad() {
   var hoy = new Date();
-  var cumpleanos = new Date(2003, 04, 26);
+  var cumpleanos = new Date(2002, 11, 17);
   var edad = hoy.getFullYear() - cumpleanos.getFullYear();
   var m = hoy.getMonth() - cumpleanos.getMonth();
 
