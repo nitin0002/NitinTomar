@@ -664,7 +664,7 @@ showTime();
 /* ==================== DYNAMIC COPYRIGHT YEAR ==================== */
 function copyright() {
   copyrightYear = new Date().getFullYear();
-  copyFinal = "© "  + copyrightYear + " Made by IgnacioPrados";
+  copyFinal = "© "  + copyrightYear + " Made by NitinTomar";
   document.getElementById("copy").innerText = copyFinal;
 };
 copyright();
