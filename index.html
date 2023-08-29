@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <!-- ===== TITTLE ===== -->
+        <title>Nitin Tomar</title>
+
+        <!-- ===== META ===== -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+        <meta name="description" content="Portfolio - Software Developer & Designer."/>
+
+        <!-- ===== OG ===== -->
+        <meta property="og:title" content="Nitin Tomar" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/og.png" />
+        <meta property="og:description" content="Portfolio - Software Developer & Designer." />
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- ===== FAVICON ===== -->
+        <link  rel="icon"   href="assets/img/favicon.png" type="image/png" />
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ===== FONT AWESOME ===== -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </head>
+    <body>
+
+        <!-- ===== INTRO ANIMATION ===== -->
+        <div class="intro">
+            <div class="intro-text">
+                <h1 class="hide">
+                    <span class="text"></span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text"><img src="/assets/img/logo3d.png" style="transform: scale(.5);"></span>
+                </h1>
+                <h1 class="hide">
+                    <span class="text"></span>
+                </h1>
+            </div>
+        </div>
+        <div class="slider"></div>
+
+        <!-- ===== CURSOR ===== -->
+        <div class="custom-cursor" id="js-cursor">
+            <div class="cursor__small abs-center" id="js-cursor__small"></div>
+            <div class="cursor__big abs-center" id="js-cursor__big"></div>
+            <div class="cursor__big2 abs-center" id="js-cursor__big2"></div>
+        </div>
+
+
+        <!-- ===== HEADER ===== -->
+        <header class="l-header">
+
+            <!-- ===== NAV BAR ===== -->
+            <nav class="nav bd-grid">
+
+                <div>
+                    <a href="#" class="nav__logo curserhover"><img  class="nav__img" id="navlogo" src="assets/img/logo-nav.png" alt="Logo Ignacio Prados"><p>Nitin Tomar</p></a>
+                </div>
+
+                <!-- ===== NAV MENU ===== -->
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active curserhover"></a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link curserhover">About Me</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link curserhover">Experience</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link curserhover">Projects</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link curserhover">Skills</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link curserhover">Contact</a></li>
+
+                        <!--<li class="nav__item"><p class="lang curserhover" id="language-button"><b>EN</b></p></li>-->
+                        <li class="nav__item"><i class='bx bxs-moon change-theme curserhover' id="theme-button"></i></li>
+                    </ul>
+
+                </div>
+
+                <!-- ===== NAV MENU MOBILE ICON ===== -->
+                <div class="nav__toggle curserhover" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <!-- ===== MINI MUSIC PLAYER ===== -->
+        <!-- I am not the owner of these tracks. -->
+        <div id="app-cover">
+            <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                <div id="current-time"></div>
+                <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                <div id="ins-time"></div>
+                <div id="s-hover"></div>
+                <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                <a href="https://www.youtube.com/watch?v=wcAn1alQUYs&ab_channel=STMPDRCRDS" target="_blank" class="curserhover2"><img src="/assets/img/1.jpg" class="active" id="_1"></a>
+                <a href="https://www.youtube.com/watch?v=KDxJlW6cxRk&ab_channel=DukeDumontVEVO" target="_blank" class="curserhover2"><img src="/assets/img/2.jpg" id="_2"></a>
+                <a href="https://www.youtube.com/watch?v=JRfuAukYTKg&ab_channel=DavidGuetta" target="_blank" class="curserhover2"><img src="/assets/img/3.jpg" id="_3"></a>
+                <a href="https://www.youtube.com/watch?v=NlhMyqJRGJA&ab_channel=ZaraLarssonMusicVEVO" target="_blank" class="curserhover2"><img src="/assets/img/4.jpg" id="_4"></a>
+                <a href="https://www.youtube.com/watch?v=0xvUOV06IGk&ab_channel=ClubKitchen" target="_blank" class="curserhover2"><img src="/assets/img/5.jpg" id="_5"></a>
+                <div id="buffer-box"></div>
+                </div>
+                <div id="player-controls">
+                <div class="control">
+                    <div class="mediabutton" id="play-previous">
+                    <i class="fas fa-backward curserhover"></i>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="mediabutton" id="play-pause-button">
+                    <i class="fas fa-play curserhover"></i>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="mediabutton" id="play-next">
+                    <i class="fas fa-forward curserhover"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+        <!-- ===== MAIN ===== -->
+        <main class="l-main">
+
+            <!-- ===== BACKGROUND STARS ===== -->
+            <div>
+                <div id='stars'></div>
+                <div id='stars2'></div>
+                <div id='stars3'></div>
+                <div id='stars4'></div>
+            </div>
+
+            <!-- ===== BACK TO TOP BUTTON ===== -->
+            <button id="back-to-top-btn" class="curserhover"><i class="fas fa-angle-double-up"></i></button>
+
+            <!-- ===== HOME ===== -->
+            <section class="home bd-grid" id="home">
+
+                <!-- ===== TITTLE & CONTACT BUTTON ===== -->
+                <div class="home__data">
+                    <h1 class="home__title">Hello,<br>I'm <span class="home__title-color">Nitin Tomar.</span><br><span class="ityped"></span><span class="ityped"></span></h1>
+                    <!--<a href="#contacto" class="button curserhover2" ><i class="far fa-comments"></i> | Let's talk</a>-->
+                    <a href="#contacto" class="button curserhover2" >Let's talk</a>
+                </div>
+
+                <!-- ===== SOCIAL ICONS ===== -->
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/nitin-tomar002/" target="_blank" class="home__social-icon curserhover"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://github.com/nitin0002" target="_blank" class="home__social-icon curserhover"><i class='fab fa-github' ></i></a>
+                    <a href="https://twitter.com/NitinTomar002" target="_blank" class="home__social-icon curserhover"><i class='fab fa-twitter' ></i></a>
+                    <a href="https://www.instagram.com/nitintomar200" target="_blank" class="home__social-icon curserhover"><i class='fab fa-instagram' style="font-weight:600;" ></i></a>
+                    <!--<a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="home__social-icon curserhover"><i class='far fa-envelope' ></i></a>-->
+                </div>
+
+                <!-- ===== LOGO ===== -->
+                <div class="home__img" id="logo">
+                   <img src="assets/img/perfil2.png" class="logoimg" alt="Logo Ignacio Prados">
+                </div>
+
+            </section>
+
+            <!--========== ABOUT ==========-->
+            <section class="send section" id="about">
+                <div class="send__container send llenar curserhover2">
+                    <div class=" lema bd-grid  centertxt">
+                        <div class="tarjcont3">
+                            <h2 class=" blanco section-title-center send__title1 exp" id="slogan" style="font-size: 2em;">I create unique digital experiences.</h2>
+                        </div> 
+                  </div>
+                </div>
+                <div class="send__container">
+                    <div class="bd-container bd-grid">
+                        <div class="send__content">
+                            <h2 class="section-title-center send__title">About Me</h2>
+                            <p class="send__description">
+
+                                I design and develop visually appealing websites, I started programming when I was 15 years old and now I'm studying Computer Science Engineering. I love indian music 🎧<br><br>
+                                Currently working with freelance projects for clients, my goal is to bring ideas to reality in the most simplest, useful and attractive way 🚀</p>
+                        </div>
+
+                        <div class="send__img">
+                            <table class="infome">
+                                <tr>
+                                <td class="me"><i class="fas fa-user"></i></td>
+                                <td class="me" id="edad"><p></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="me"><i class="fas fa-volume-up"></i></td>
+                                    <td class="me"><p>English & Hindi</p></td>
+                                </tr>
+                                <tr>
+                                    <td class="me"><i class="fas fa-map-marker-alt"></i></td>
+                                    <td class="me"><p>Delhi, India</p></td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                    <!-- ===== CV BUTTON ===== -->
+                    <!--<a href="assets/img/CV-IgnacioPrados.pdf" target="_blank" class="buttoncv curserhover2" ><i class="far fa-file-alt"></i> | View CV</a>-->
+                    <a href="assets/img/CV-Nitin-Tomar.pdf" target="_blank" class="buttoncv curserhover2" >Download CV</a>
+
+                </div>
+
+
+            </section>
+
+            <div class="vl"></div>
+
+            <!--========== QUALIFICATION ==========-->
+            <section class="qualification section send" id="experience">
+                <div class="send__container">
+                            <h2 class=" section-title-center send__title1 exp">Experience</h2>
+                            <p class="section__subtitle span1 exp">My professional journey.</p>
+
+                            <section class="cd-horizontal-timeline container">
+                                <div class="timeline">
+                                    <div class="events-wrapper">
+                                        <div class="events">
+                                            <ol>
+                                                <li><a href="#0" data-date="16/01/2012" class="selected curserhover">1</a></li>
+                                                <li><a href="#0" data-date="16/01/2014" class="curserhover">2</a></li>
+                                                <li><a href="#0" data-date="16/01/2016" class="curserhover">3</a></li>
+                                                <li><a href="#0" data-date="16/01/2018" class="curserhover">4</a></li>
+                                                <li><a href="#0" data-date="16/01/2020" class="curserhover">5</a></li>
+
+                                            </ol>
+                                        
+                                            <span class="filling-line" aria-hidden="true"></span>
+                                        </div> <!-- .events -->
+                                    </div> <!-- .events-wrapper -->
+                                        
+                                    <ul class="cd-timeline-navigation">
+                                        <li><a href="#0" class="prev inactive curserhover"></a></li>
+                                        <li><a href="#0" class="next curserhover"></a></li>
+                                    </ul> <!-- .cd-timeline-navigation -->
+                                </div> <!-- .timeline -->
+                            
+                                <div class="events-content">
+                                    <ol>
+                                        <li class="selected" data-date="16/01/2012">
+                                            <h2>Free Lancer</h2>
+                                            <em>Aug 2022 - Present</em>
+                                            <p>	
+                                                Design of web platforms and mobile apps. I applied atomic design creating UI Kits. I created reusable website templates.
+                                            </p>
+                                        </li>
+
+                                        <li data-date="16/01/2014">
+                                            <h2>Frontend Developer & Designer Intern</h2>
+                                            <em>GBU • Mar 2023 - July 2023</em>
+                                            <p>	
+                                                At Gautam Buddha University,  developed a full stack job portal using React.js and Node.js, facilitating job recruitment and application processes with seamless user experience.
+
+                                            </p>
+                                        </li>
+                            
+                                        <li data-date="16/01/2016">
+                                            <h2>Python Developer</h2>
+                                            <em> Jun 2023 - July 2023</em>
+                                            <p>	
+                                               Design and Development of a Stock Prediction App which can predict future prices of Stocks <br>
+
+                                            </p>
+                                        </li>
+                            
+                                        <li data-date="16/01/2018">
+                                            <h2>Web Developer & Designer</h2>
+                                            <em>Freelance • Jul 2023 - Sept 2023</em>
+                                            <p>	
+                                                Design and development of customized Landing Pages. Featured sites: @Indus - @Hackfeds
+                                            </p>
+                                        </li>
+                            
+                                        <li data-date="16/01/2020">
+                                            <h2>Web Developer Intern</h2>
+                                            <em>Cognifyz Technologies • Aug 2023 - Present</em>
+                                            <p>	
+                                                Training in programming, company organization and digital services. Emotional intelligence, customer experience and design thinking workshop.
+                                            </p>
+                                        </li>
+                            
+                                               
+                                    </ol>
+                                </div> <!-- .events-content -->
+                            </section>
+
+                    <!-- ===== Linkedin BUTTON ===== -->
+                    <a href="https://www.linkedin.com/in/nitin-tomar002/" target="_blank" class="buttoncv curserhover2" >More information</a>
+
+
+                </div>
+            </section>
+
+            <!-- ===== WORK ===== -->
+            <section class="work section1 send" id="work">
+            <div style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--nav-color);"></path></svg></div>
+            <div class="wave send__container2">
+
+                <h2 class="section-title2 section-title-center send__title1">Web Dev.    Projects</h2>
+                <p class="section__subtitle span2 exp">Great websites I've built.</p>
+
+                <div class="project-container">
+
+                    <div class="project">
+                        <div class="project-content">
+                          <div class="project-label">Website</div>
+                          <h4 class="project-title">Indus Inc.</h4>
+                          <div class="project-details">
+                            <p>Indian Commodity importer and exporter. I made the design and frontend development.</p>
+                            <ul>
+                              <li>React</li>
+                              <li>Tailwind</li>
+                              <li>JavaScript</li>
+                              <li>CSS3</li>
+                            </ul>
+                          </div>
+                          <a class="button bd-grid curserhover2 verproyecto"  data-id="page" >View Project</a>
+                        </div>
+                        
+                        <div class="project-img curserhover2 snip1321-2"  data-id="page">
+                          <img src="assets/img/Indusinc-ss.png" alt="" />
+                          <figcaption>
+                              <h4>Web site</h4>
+                              <h2>Indus Inc.</h2>
+                            </figcaption>
+                        </div>
+                        
+                      </div>
+  
+                      <div class="project-2">
+                          <div class="project-content-2">
+                            <div class="project-label-2">Website</div>
+                            <h4 class="project-title-2">HackFeds</h4>
+                            <div class="project-details-2">
+                              <p>HACKFED is a community of passionate developers who shares a common purpose</p>
+                              <ul>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Tailwind</li>
+                                <li>React</li>
+                              </ul>
+                            </div>
+                            <a class="button bd-grid curserhover2 verproyecto" data-id="page" >View Project</a>
+                          </div>
+                          
+                          <div class="project-img-2 curserhover2 snip1321-2" data-id="page">
+                            <img src="assets/img/hackfeds-ss.png" alt="" />
+                            <figcaption>
+                                <h4>Webm site</h4>
+                                <h2>HackFeds</h2>
+                              </figcaption>
+                          </div>
+                          
+                        </div>
+
+                    <!-- <div class="project">
+                      <div class="project-content">
+                        <div class="project-label">Landing Page</div>
+                        <h4 class="project-title">Llanos EcoLodge</h4>
+                        <div class="project-details">
+                          <p>Responsive website for hosting company. Designed for the customer to get concrete information about the service they provide.</p>
+                          <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>fullPage.js</li>
+                          </ul>
+                        </div>
+                        <a class="button bd-grid curserhover2 verproyecto" onclick="redirect('llanosecolodge')" data-id="page" >View Project</a>
+                      </div>
+                      
+                      <div class="project-img curserhover2 snip1321-2" onclick="redirect('llanosecolodge')" data-id="page">
+                        <img src="assets/img/banner1.JPG" alt="" />
+                        <figcaption>
+                            <h4>Website</h4>
+                            <h2>llanosecolodge</h2>
+                          </figcaption>
+                      </div>
+                      
+                    </div>
+
+                    <div class="project-2">
+                        <div class="project-content-2">
+                          <div class="project-label-2">Voice Assistant</div>
+                          <h4 class="project-title-2">Emma Bot</h4>
+                          <div class="project-details-2">
+                            <p>Web that recognizes what the user says by voice and responds. It tells jokes, interesting facts and much more. Just activate the microphone and speak.</p>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li>jQuery</li>
+                              <li>HTML5</li>
+                              <li>CSS3</li>
+                            </ul>
+                          </div>
+                          <a class="button bd-grid curserhover2 verproyecto" onclick="redirect('emmabot')" data-id="page" >View Project</a>
+                        </div>
+                        
+                        <div class="project-img-2 curserhover2 snip1321-2" onclick="redirect('emmabot')" data-id="page">
+                          <img src="assets/img/banner5.JPG" alt="" />
+                          <figcaption>
+                              <h4>WebApp</h4>
+                              <h2>Emma Bot</h2>
+                            </figcaption>
+                        </div>
+                        
+                      </div>
+
+                      <div class="project">
+                        <div class="project-content">
+                          <div class="project-label">Landing Page</div>
+                          <h4 class="project-title">belo App</h4>
+                          <div class="project-details">
+                            <p>Website for fintech company that offers a platform for buying and selling cryptocurrencies with argentine pesos.</p>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li>CSS3</li>
+                              <li>HTML5</li>
+                              <li>Bootstrap</li>
+                            </ul>
+                          </div>
+                          <a class="button bd-grid curserhover2 verproyecto" onclick="redirect('belo')" data-id="page" >View Project</a>
+                        </div>
+                        
+                        <div class="project-img curserhover2 snip1321-2" onclick="redirect('belo')" data-id="page">
+                          <img src="assets/img/banner6.JPG" alt="" />
+                          <figcaption>
+                              <h4>Website</h4>
+                              <h2>belo App</h2>
+                            </figcaption>
+                        </div>
+                        
+                      </div> -->
+
+                      <div class="project-2">
+                        <div class="project-content-2">
+                          <div class="project-label-2">Web App</div>
+                          <h4 class="project-title-2">Calculator X</h4>
+                          <div class="project-details-2">
+                            <p>Calculator with an excellent design. It has light and dark mode. Add, subtract, multiply, divide, perform percentages and display the operations on the screen.</p>
+                            <ul>
+                              <li>JavaScript</li>
+                              <li>jQuery</li>
+                              <li>HTML5</li>
+                              <li>CSS3</li>
+                            </ul>
+                          </div>
+                          <a class="button bd-grid curserhover2 verproyecto"  data-id="page" >View Project</a>
+                        </div>
+                        
+                        <div class="project-img-2 curserhover2 snip1321-2"  data-id="page">
+                          <img src="assets/img/banner83.png" alt="" />
+                          <figcaption>
+                              <h4>WebApp</h4>
+                              <h2>Calculator X</h2>
+                            </figcaption>
+                        </div>
+                        
+                      </div>
+
+                  </div>
+
+                  
+                    <!-- ===== GITHUB BUTTON ===== -->
+                    <!-- <div class="ab__container bd-grid">
+                        <a id="seemore" class="button bd-grid curserhover2" onclick="redirect('proyectos')" data-id="page" >View all projects</a>
+                    </div> -->
+
+            </div>
+            
+            </section>
+
+
+            <!-- ===== SKILLS ===== -->
+            <section class="work section1" id="skills">
+            <div style="height: 100px; overflow: hidden;background-color: var(--nav-color);" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--wave-color);"></path></svg></div>
+            <div class="wave send__container3">
+
+                <h2 class="section-title2 section-title-center send__title1">Skills</h2>
+                <p class="section__subtitle span2 exp">" In doing we learn " - George Herbert</p>
+
+                <!-- ===== SKILLS SLIDER ===== -->
+                <div class="sliderlogo">
+                    <div class="customer-logos">
+                        <div class="slide" ><img src="assets/img/html.png" alt="HTML5"><p>HTML5</p></div>
+                        <div class="slide" ><img src="assets/img/css.png" alt="CSS3"><p>CSS3</p></div>
+                        <div class="slide" ><img src="assets/img/js.png" alt="JavaScript"><p>JavaScript</p></div>
+                        <div class="slide" ><img src="assets/img/react.png" alt="React"><p>React</p></div>
+                        <div class="slide" ><img src="assets/img/node.png" alt="Node.js & Express.js"><p>Node.js & Express.js</p></div>
+                    <!--<div class="slide" ><img src="assets/img/sass.png" alt="SASS"><p>SASS</p></div>-->
+                        <div class="slide" ><img src="assets/img/bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div>
+                        <div class="slide" ><img src="assets/img/jquery.png" alt="jQuery"><p>jQuery</p></div>
+                        <div class="slide" ><img src="assets/img/npm.png" alt="npm"><p>npm</p></div>
+                        <div class="slide" ><img src="assets/img/git.png" alt="Git & GitHub"><p>Git & GitHub</p></div>
+                        <div class="slide" ><img src="assets/img/terminal.png" alt="terminal"><p>Terminal</p></div>
+                        <div class="slide" ><img src="assets/img/py.png" alt="Python"><p>Python</p></div>
+                   <!-- <div class="slide" ><img src="assets/img/fr.png" alt="Firebase"><p>Firebase</p></div> -->
+                        <div class="slide" ><img src="assets/img/ps.png" alt="Photoshop"><p>Photoshop</p></div>
+                        <div class="slide" ><img src="assets/img/ai.png" alt="Illustrator"><p>Illustrator</p></div>
+                    <!-- <div class="slide" ><img src="assets/img/lr.png" alt="Lightroom"><p>Lightroom</p></div> -->
+                        <div class="slide" ><img src="assets/img/xd.png" alt="Xd"><p>XD</p></div>
+                        <div class="slide" ><img src="assets/img/figma.png" alt="Figma"><p>Figma</p></div>
+                    <!--<div class="slide" ><img src="assets/img/svg.png" alt="SVG"><p>SVG</p></div>-->
+                   <!-- <div class="slide" ><img src="assets/img/trello.png" alt="Trello"><p>Trello</p></div> -->
+                    </div>
+                </div>
+
+            </div>
+
+            </section>
+
+
+            <!--========== CONTACT==========-->
+            <section class="send1 section1 contact " id="contact">
+                <svg viewBox="0 0 1920 163" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="var(--wave-color)" d="M 0 0 C 388.40000000000003 0 582.5999999999999 110 971 110 L 971 110 L 971 0 L 0 0 Z" stroke-width="0"></path> <path fill="var(--wave-color)" d="M 970 110 C 1350 110 1540 0 1920 0 L 1920 0 L 1920 0 L 970 0 Z" stroke-width="0"></path> </svg>
+                <div id="contact"><br></div>
+
+                <div class="send__container1" id="top">
+                    <div class="send__content1 bd-grid  centertxt">
+
+                         <!-- CLOCK STATUS -->
+                        <div class="tarjcont3">
+                                <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+                        </div> 
+                        <div class="tarjcont3">
+                                <span class="stat"><i class="fas fa-circle statuscircle" id="circulo"></i></span><span class="stat" id="status"></span>
+                        </div> 
+
+                  </div>
+                </div>
+
+                <div class="send__container1" id="bottom">
+                    <div class="send__content1 bd-grid">
+                        <h2 class="section-title-center send__title1">Contact</h2>
+                        <p class="section__subtitle span1 exp2">Do you have a project in mind? Let's make it come true 🙌</p>
+                        <p class="send__description1">I am open to listen to proposals. If you want to work with me, contact me through one of my social networks below. All comments and offers are welcome.
+                        </p>
+
+                        <!-- FROMULARIO DE CONTACTO -->
+                        <!--<div class="contact__container bd-grid">
+                            <form name='formulario' id='formulario' required method='post' action='https://formspree.io/f/mvovdgrv' target='_self' enctype="multipart/form-data" class="contact__form">
+                                <input type='text' name='name' id='Nombre' required placeholder="Nombre *" class="contact__input">
+                                <input type='text' name='email' id='email' pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required placeholder="Email *" class="contact__input">
+                                <textarea name="message" id="mensaje" required cols="10" rows="10" placeholder="Mensaje *" class="contact__input"></textarea>
+                                <input id="boton-enviar" type="submit" value="Enviar" class="contact__button buttonct curserhover">
+                            </form>
+                        </div>-->
+
+                         <!-- TARJETAS DE CONTACTO -->
+                        <div class="tarjcont">
+                        <a href="mailto:ntomar.0020@gmail.com" class=" tarjeta curserhover2">
+                                <i class="icon fa fa-envelope tar"></i>
+                                <p class="tar mail">ntomar.0020@gmail.com</p>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/nitin-tomar002/" target="_blank" class="tarjeta curserhover2">
+                            <i class="icon fab fa-linkedin-in tar"></i>
+                            <p class="tar">Nitin Tomar</p>
+                        </a>
+
+                        <!--<a href="https://api.whatsapp.com/send?phone=+541122386183" target="_blank" class="tarjeta curserhover2">
+                                <i class="icon fab fa-whatsapp tar"></i>
+                                <p class="tar">+54 11 2238-6183</p>
+                        </a>-->
+
+                        <a href="https://www.instagram.com/nitintomar200" target="_blank" class="tarjeta curserhover2">
+                            <i class="icon fab fa-instagram tar"></i>
+                            <p class="tar">@nitintomar200</p>
+                        </a>
+
+                        </div> 
+
+
+
+                    </div>
+                </div>
+
+                            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--wave1-color)" opacity="0.5" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="var(--wave2-color)" opacity="0.6"/>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="var(--wave3-color)" opacity="0.7"/>
+                <use xlink:href="#gentle-wave" x="48" y="7" fill= "var(--wave4-color)" opacity="1" />
+                </g>
+                </svg>
+                </div>
+            </section>
+
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="footer">
+
+                <!-- ===== FOOTER TITLE ===== -->
+            <div class="content flex">
+
+                <p class="footer__title">Nitin Tomar</p>
+
+                <!-- ===== FOOTER SOCIAL LINKS ===== -->
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/nitin-tomar002/" target="_blank" class="footer__icon curserhover"><i class='fab fa-linkedin-in'></i></a>
+                    <a href="https://www.instagram.com/nitintomar200" target="_blank" class="footer__icon curserhover"><i class='fab fa-instagram' style="font-weight:600;" ></i></a>
+                    <a href="https://github.com/nitin0002" target="_blank" class="footer__icon curserhover"><i class='fab fa-github' ></i></a>
+                    <a href="https://twitter.com/NitinTomar002" target="_blank" class="footer__icon curserhover"><i class='fab fa-twitter' ></i></a>
+                    <!--<a href="mailto:ignacioprados.ip@gmail.com" target="_blank" class="footer__icon curserhover"><i class='far fa-envelope' ></i></a>-->
+                </div>
+
+                <!-- ===== FOOTER COPYRIGHT ===== -->
+                <p class="footer__copy" id="copy"></p>
+            </div>
+            </footer>
+
+            <!-- ===== GSAP JS LIBRARY ===== -->
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+                integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+                crossorigin="anonymous"
+            ></script>
+
+            <!-- ===== JQUERY LIBRARY ===== -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <!--===== ITYPED JS =====-->
+            <script src="https://unpkg.com/ityped@0.0.10"></script>
+
+            <!--===== MAIN JS =====-->
+            <script src="assets/js/main.js"></script>
+            
+            <!--===== SLICK JS =====-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        </div>
+    </body>
+
+</html>
+
