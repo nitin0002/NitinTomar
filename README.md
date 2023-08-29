@@ -1,4 +1,4 @@
-![banner](https://raw.githubusercontent.com/IgnacioPrados/web/gh-pages/assets/img/preview.JPG)
+![banner](https://github.com/nitin0002/NitinTomar/blob/main/assets/img/Preview.png)
 #  Nitin Tomar Portfolio
 
 My Official Website as a Software Developer
