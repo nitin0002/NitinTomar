@@ -16,4 +16,4 @@ https://nitintomar.vercel.app
 - ScrollReveal.js
 - Slick.js
 
-> © 2023 Made by Nitin Tomar
+> © 2023 Made by Nitin Tomar with ❤️
