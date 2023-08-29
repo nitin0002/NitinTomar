@@ -664,7 +664,7 @@ showTime();
 /* ==================== DYNAMIC COPYRIGHT YEAR ==================== */
 function copyright() {
   copyrightYear = new Date().getFullYear();
-  copyFinal = "© "  + copyrightYear + " Made by NitinTomar";
+  copyFinal = "© "  + copyrightYear + " Made by Nitin Tomar";
   document.getElementById("copy").innerText = copyFinal;
 };
 copyright();
